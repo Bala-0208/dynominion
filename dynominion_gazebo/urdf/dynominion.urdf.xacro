@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!-- Basic differential drive mobile base -->
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="dynominion">
+
+  <xacro:include filename="$(find dynominion_description)/urdf/dynominion_description.urdf.xacro" />
+
+  <!-- Import Rviz colors -->
+  <xacro:include filename="$(find dynominion_description)/urdf/dynominion.materials.xacro" />
+
+  <!-- Import dumbot ros2_control description -->
+  <xacro:include filename="$(find dynominion_gazebo)/urdf/gazebo_ros2_control.xacro" />
+
+  <xacro:include filename="$(find dynominion_gazebo)/urdf/gazebo_sensor_plugin.xacro" />
+
+  <xacro:dynominion_base />
+
+  <xacro:dynominion_ros2_control
+    name="ros2_diff_drive" />
+
+</robot>
