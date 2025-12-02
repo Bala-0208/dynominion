@@ -37,17 +37,17 @@
   <link name="base_link">
     <inertial>
       <origin
-        xyz="-2.08718083181733E-06 -6.63266502241936E-05 0.108362368707114"
+        xyz="-0.0012031 -0.00067857 0.11523"
         rpy="0 0 0" />
       <mass
-        value="37.9896815067854" />
+        value="38.194" />
       <inertia
-        ixx="0.912512689540164"
-        ixy="0.000178877572156337"
-        ixz="3.67556951191397E-05"
-        iyy="0.672787505255827"
-        iyz="6.40317168517927E-06"
-        izz="1.50799767993211" />
+        ixx="0.92708"
+        ixy="0.00025177"
+        ixz="5.5591E-05"
+        iyy="0.68737"
+        iyz="3.0979E-06"
+        izz="1.5405" />
     </inertial>
     <xacro:visual_collision stl="base_link.STL" material="base_link"/>
   </link>
@@ -100,16 +100,16 @@
   <link name="right_wheel">
     <inertial>
       <origin
-        xyz="5.6256E-18 0.0145 9.0206E-17"
+        xyz="-1.3266E-15 0.0145 1.8319E-15"
         rpy="0 0 0" />
       <mass
         value="2.6657" />
       <inertia
         ixx="0.0063899"
         ixy="1.0787E-18"
-        ixz="-6.4004E-19"
+        ixz="-6.3978E-19"
         iyy="0.012138"
-        iyz="1.1622E-18"
+        iyz="1.1621E-18"
         izz="0.0063899" />
     </inertial>
     <xacro:visual_collision stl="right_wheel_l1.STL" material="wheel"/>
@@ -165,7 +165,7 @@
 
   <joint name="imu_joint" type="fixed">
     <origin
-      xyz="0.0 0 0.101"
+      xyz="0.2785 0 0.101"
       rpy="0 0 0" />
     <parent
       link="base_link" />
@@ -185,6 +185,131 @@
       link="base_link" />
     <child
       link="gps" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+
+  <link
+    name="castor_1">
+    <inertial>
+      <origin
+        xyz="0.0276 -2.6305E-10 -0.050548"
+        rpy="0 0 0" />
+      <mass
+        value="0.1915" />
+      <inertia
+        ixx="7.6816E-05"
+        ixy="-1.6051E-11"
+        ixz="1.5845E-06"
+        iyy="0.00011695"
+        iyz="1.2642E-11"
+        izz="9.0525E-05" />
+    </inertial>
+    <xacro:visual_collision stl="castor_1.STL" material="caster"/>
+  </link>
+
+  <joint name="castor1_joint" type="fixed">
+    <origin
+      xyz="0.218 -0.09 0.0624"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="castor_1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+
+  <link
+    name="castor_2">
+    <inertial>
+      <origin
+        xyz="0.0276 -2.6305E-10 -0.050548"
+        rpy="0 0 0" />
+      <mass
+        value="0.1915" />
+      <inertia
+        ixx="7.6816E-05"
+        ixy="-1.6051E-11"
+        ixz="1.5845E-06"
+        iyy="0.00011695"
+        iyz="1.2642E-11"
+        izz="9.0525E-05" />
+    </inertial>
+    <xacro:visual_collision stl="castor_2.STL" material="caster"/>
+  </link>
+
+  <joint name="castor2_joint" type="fixed">
+    <origin
+      xyz="0.218 0.09 0.0624"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="castor_2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+
+  <link name="castor_3">
+    <inertial>
+      <origin
+        xyz="0.0276 -2.6305E-10 -0.050548"
+        rpy="0 0 0" />
+      <mass
+        value="0.1915" />
+      <inertia
+        ixx="7.6816E-05"
+        ixy="-1.6051E-11"
+        ixz="1.5845E-06"
+        iyy="0.00011695"
+        iyz="1.2642E-11"
+        izz="9.0525E-05" />
+    </inertial>
+    <xacro:visual_collision stl="castor_3.STL" material="caster"/>
+  </link>
+
+  <joint name="castor3_joint" type="fixed">
+    <origin
+      xyz="-0.2 -0.09 0.0624"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="castor_3" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+
+  <link
+    name="castor_4">
+    <inertial>
+      <origin
+        xyz="0.0276 -2.6305E-10 -0.050548"
+        rpy="0 0 0" />
+      <mass
+        value="0.1915" />
+      <inertia
+        ixx="7.6816E-05"
+        ixy="-1.6051E-11"
+        ixz="1.5845E-06"
+        iyy="0.00011695"
+        iyz="1.2642E-11"
+        izz="9.0525E-05" />
+    </inertial>
+    <xacro:visual_collision stl="castor_4.STL" material="caster"/>
+  </link>
+
+  <joint
+    name="castor4_joint"
+    type="fixed">
+    <origin
+      xyz="-0.2 0.09 0.0624"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="castor_4" />
     <axis
       xyz="0 0 0" />
   </joint>
