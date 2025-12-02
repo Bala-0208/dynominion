@@ -1,24 +1,6 @@
-#dynominion_slam
+#   dynominion_slam
 
-###Overview
-
-The dynominion_slam package enables SLAM Toolbox–based mapping for the Dynominion robot. It provides both online and offline mapping capabilities to support flexible and efficient map generation.
-
-This package integrates SLAM Toolbox with the Dynominion robot to perform simultaneous localization and mapping. 
-
-It includes multiple launch configurations for different mapping modes and uses parameter files stored in the **config/** folder for customization.
-
-The launch folder includes three main launch files:
-	- online_async_launch.py – Performs live mapping asynchronously. The map is updated after loop closures or periodic optimizations.
-    - online_sync_launch.py – Performs live mapping synchronously, updating the map with each incoming sensor measurement.
-    - offline_launch.py – Used for offline mapping with previously recorded data stored as ROS bags.
-
-###Package Structure
-
-dynominion_slam
-#dynominion_slam
-
-###Overview
+### Overview
 
 The dynominion_slam package enables SLAM Toolbox–based mapping for the Dynominion robot. It provides both online and offline mapping capabilities to support flexible and efficient map generation.
 
@@ -31,7 +13,7 @@ The launch folder includes three main launch files:
     - online_sync_launch.py – Performs live mapping synchronously, updating the map with each incoming sensor measurement.
     - offline_launch.py – Used for offline mapping with previously recorded data stored as ROS bags.
 
-###Package Structure
+### Package Structure
 
 dynominion_slam     
 ├── CMakeLists.txt  
@@ -52,7 +34,7 @@ dynominion_slam
    └── mapping.rviz 
 
 
-###Package Requirements 
+### Package Requirements 
 
     - slam_toolbox
     - laser_filters
@@ -60,21 +42,7 @@ dynominion_slam
 Additional requirement:
     - rosbag2 (for offline mapping)
 
-###Launch
-
-   `ros2 launch dynominion_slam online_async_launch.py` 
-   `ros2 launch dynominion_slam online_sync_launch.py`  
-   `ros2 launch dynominion_slam offline_launch.py`
-
-###Package Requirements 
-
-    - slam_toolbox
-    - laser_filters
-
-Additional requirement:
-    - rosbag2 (for offline mapping)
-
-###Launch
+### Launch
 
    `ros2 launch dynominion_slam online_async_launch.py` 
    `ros2 launch dynominion_slam online_sync_launch.py`  

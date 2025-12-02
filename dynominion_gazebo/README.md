@@ -1,6 +1,6 @@
-#dynominion_gazebo
+#   dynominion_gazebo
 
-###Overview
+### Overview
 
 The dynominion_gazebo package integrates Gazebo sensor plugins along with the gazebo_ros2_control plugin to create a complete simulation environment for the Dynominion robot.
 
@@ -14,7 +14,7 @@ This package includes two launch files:
     - dyniminion_gazebo.launch.py: Spawns the Dynominion robot in the Gazebo world and establishes communication between Gazebo and ROS 2.
     - rviz_model_view.launch.py: Visualizes the Dynominion robot in RViz2 using a fixed reference frame.
 
-###Package Structure
+### Package Structure
 
 dynominion_gazebo       
 ├── CMakeLists.txt      
@@ -44,7 +44,7 @@ dynominion_gazebo
 └── worlds      
     └── cafe.world      
 
-###Package Requirements
+### Package Requirements
 
     - gazebo_ros
     - gazebo_ros2_control
@@ -54,7 +54,7 @@ dynominion_gazebo
     - urdf
     - robot_state_publisher
 
-###Launch
+### Launch
 
 `ros2 launch dynominion_gazebo dynominion_gazebo.launch.py`
 
