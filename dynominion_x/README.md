@@ -7,7 +7,7 @@
 1. Teleoperation - Dynominion X can be moved with the control commands for the user in this process
 2. Mapping - Dynominion X can record its environment in the Occupancy Grid Map with the help of user in this process.
 3. Path Planning - With the input of environment , its current location and its destination, Dynominion X can plan its own path based on Planner that user chose.
-4.Motion Control - With the plan from the Planner , Dynominion X can make its own drive commands based on the user selected controller. 
+4. Motion Control - With the plan from the Planner , Dynominion X can make its own drive commands based on the user selected controller. 
 Note: Dynominion X uses Differential Drive System. So user must choose the controller which works dor differential drive system.
 5. Collision Safety - Dynominion X has collision safety pre build in it while navigating on its own. User may also include it while teleoperating but its their own choice. The Safety polygons must be choosen by the User based on their environment and requirement.
 
@@ -66,7 +66,7 @@ Dynominion X has many topics while in autonomous navigation mode. In this sub mo
 
 1. /scan - laserscan topic from the 2D lidar.
 2. /scan_filtered - filtered laserscan topic for mapping.
-3. /wit_imu - Imu Topic from the IMU.
+3. /imu/data - Imu Topic from the IMU.
 4. /wheelodom - Odometry topic from the Wheel Encoders.
 5. /battery_voltage - Voltage in V of the main battery.
 6. /odometry/filtered - Odemetry topic from Sensor Fusion.
