@@ -17,19 +17,27 @@ Dynominion X has multiple launch files for its operation. The following passages
 
 1. To active the entire system i.e. activate all the sensor and establish all the **tf** s  , the command is
 
-    **ros2 launch mini_amr_bringup mini_amr_bringup.launch.py**
+```bash
+ros2 launch mini_amr_bringup mini_amr_bringup.launch.py
+```
 
 2. To teleoperate the Dynominion X with the system keyboard ,
 
-    **ros2 run teleop_robot teleop_key**
+```bash
+ros2 run teleop_robot teleop_key
+```
 
 3. To map the environment, the user needs to teleoperate the robot along with this command
 
-    ** ros2 launch mini_amr_nav_bringup online_async_map.launch.py**
+```bash
+ros2 launch mini_amr_nav_bringup online_async_map.launch.py
+```
 
 4. To start the autonomous navigation process,
 
-    **ros2 launch mini_amr_nav_bringup mini_amr_nav_bringup.launch.py **
+```bash
+ros2 launch mini_amr_nav_bringup mini_amr_nav_bringup.launch.py
+```
 
 
 ### Services
@@ -38,13 +46,17 @@ Dynominion X has serveral service for the its functionalities.
 
 #### Save Map
 
-**ros2 service call /slam_toolbox/save_map slam_toolbox/srv/SaveMap "{name: {data: map_name}}"**
+```bash
+ros2 service call /slam_toolbox/save_map slam_toolbox/srv/SaveMap "{name: {data: map_name}}"
+```
 
 map_name is user choice. If the map successfully saved , the result of the response would be 0. The map is saved in the map directory.
 
 #### Load Map
 
-**ros2 service call /map_server/load_map nav2_msgs/srv/LoadMap "{map_url: map_path}"**
+```bash
+ros2 service call /map_server/load_map nav2_msgs/srv/LoadMap "{map_url: map_path}"
+```
 
 After launching the navigation script , the user must load the appropriate map of that environment before using.
 
