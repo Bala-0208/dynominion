@@ -33,6 +33,6 @@ dynominion_navigation
 
 ### Launch
     
-    ```bash
-    ros2 launch dynominion_navigation dynominion_nav_bringup.launch.py
-    ```
+```bash
+ros2 launch dynominion_navigation dynominion_nav_bringup.launch.py
+```

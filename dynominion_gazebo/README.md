@@ -56,12 +56,12 @@ dynominion_gazebo
 
 ### Launch
 
-    ```bash
-    ros2 launch dynominion_gazebo dynominion_gazebo.launch.py
-    ```
+```bash
+ros2 launch dynominion_gazebo dynominion_gazebo.launch.py
+```
 
-    In case for view
+In case for view
 
-    ```bash
-    ros2 launch dynominion_gazebo rivz_model_view.launch.py
-    ```
+```bash
+ros2 launch dynominion_gazebo rivz_model_view.launch.py
+```

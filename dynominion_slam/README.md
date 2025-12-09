@@ -44,14 +44,14 @@ Additional requirement:
 
 ### Launch
 
-    ```bash
-    ros2 launch dynominion_slam online_async_launch.py 
-    ```
+```bash
+ros2 launch dynominion_slam online_async_launch.py 
+```
 
-   ```bash
-   ros2 launch dynominion_slam online_sync_launch.py
-   ```  
+```bash
+ros2 launch dynominion_slam online_sync_launch.py
+```  
 
-   ```bash
-   ros2 launch dynominion_slam offline_launch.py
-   ```
+```bash
+ros2 launch dynominion_slam offline_launch.py
+```
