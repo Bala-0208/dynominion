@@ -1,6 +1,6 @@
 #   dynominion_slam
 
-### Overview
+## Overview
 
 The dynominion_slam package enables SLAM Toolbox–based mapping for the Dynominion robot. It provides both online and offline mapping capabilities to support flexible and efficient map generation.
 
@@ -14,7 +14,7 @@ The launch folder includes three main launch files:
 * offline_launch.py – Used for offline mapping with previously recorded data stored as ROS bags.
 
 
-## 📁 Package Structure
+## Package Structure
 
 ```
 dynominion_slam
@@ -32,10 +32,10 @@ dynominion_slam
 └── rviz/
      └── mapping.rviz
 
-
+```
 ---
 
-##  Requirements
+## Requirements
 
 | Package | Purpose |
 |---------|---------|
@@ -49,31 +49,31 @@ sudo apt install ros-humble-slam-toolbox ros-humble-laser-filters
 
 ---
 
-## � Online Sync Mapping
+## Online Sync Mapping
 
 ```bash
 ros2 launch dynominion_slam online_sync_launch.py
 ```
 
-![Sync Command](../frames/slam/sync_cmd.png)
+![Sync Command](doc/sync_cmd.png)
 
-![Sync Mapping Preview](../frames/slam/sync_launch.png)
+![Sync Mapping Preview](doc/sync_launch.png)
 
 ---
 
-## ⚡ Online Async Mapping
+## Online Async Mapping
 
 ```bash
 ros2 launch dynominion_slam online_async_launch.py
 ```
 
-![Async Command](../frames/slam/online_async_cmd.png)
+![Async Command](doc/online_async_cmd.png)
 
-![Async Mapping Preview](../frames/slam/online_async.png)
+![Async Mapping Preview](doc/online_async.png)
 
 ---
 
-## 📁 Offline Mapping
+## Offline Mapping
 
 ```bash
 ros2 launch dynominion_slam offline_launch.py
@@ -81,14 +81,19 @@ ros2 launch dynominion_slam offline_launch.py
 
 ---
 
-## � Save Map
+## Save Map
 
 ```bash
 ros2 service call /slam_toolbox/save_map slam_toolbox/srv/SaveMap "{name: {data: map_cafe}}"
 ```
 
-![Save Map Command](../frames/slam/map_saving_cmd.png)
+![Save Map Command](doc/map_saving_cmd.png)
 
-![Final Map](../frames/slam/map.png)
+![Final Map](doc/map.png)
 
 ---
+
+## Slam mapping Demo
+
+
+<img src="doc/Slam_mapping.gif" width="1500">

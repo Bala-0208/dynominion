@@ -55,4 +55,6 @@ ros2 launch dynominion_navigation dynominion_nav_bringup.launch.py
 
 ### Navigation Demo
 
-![Navigation Demo](../frames/nav(1)/nav/navpose_estngoal-ezgif.com-video-to-gif-converter.gif)
+
+<img src="../frames/nav(1)/nav/navpose_estngoal-ezgif.com-video-to-gif-converter.gif" width="1500">
+
