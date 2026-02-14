@@ -11,7 +11,7 @@ It serves as a teleoperation control module, allowing the user to move the robot
 The node sends stepwise velocity commands that change in small units, producing stable and controllable robot movement.
 
 ### Package Structure
-
+```
 teleop_robot    
 ├── README.md   
 ├── resource    
@@ -25,7 +25,7 @@ teleop_robot
     ├── test_copyright.py   
     ├── test_flake8.py  
     └── test_pep257.py  
-
+```
 ### Package Requirements
 
     - rclpy
@@ -37,10 +37,10 @@ teleop_robot
 ros2 run teleop_robot teleop_key
 ```
 
-![Teleop Command](../frames/teleop/teleop_cmd.png)
+![Teleop Command](doc/teleop_cmd.png)
 
 ---
 
 ### Teleop Demo
 
-![Teleop Demo](../frames/teleop/teleoprviz_n_gazebo-ezgif.com-video-to-gif-converter.gif)
+![Teleop Demo](doc/teleop.gif)

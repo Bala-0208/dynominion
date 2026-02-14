@@ -73,13 +73,6 @@ ros2 launch dynominion_slam online_async_launch.py
 
 ---
 
-## Offline Mapping
-
-```bash
-ros2 launch dynominion_slam offline_launch.py
-```
-
----
 
 ## Save Map
 
@@ -95,5 +88,13 @@ ros2 service call /slam_toolbox/save_map slam_toolbox/srv/SaveMap "{name: {data:
 
 ## Slam mapping Demo
 
+<img src="doc/slam_mapping.gif" width="1500">
 
-<img src="doc/Slam_mapping.gif" width="1500">
+
+## Offline Mapping
+
+```bash
+ros2 launch dynominion_slam offline_launch.py
+```
+
+---

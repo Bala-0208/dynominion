@@ -1,6 +1,6 @@
 #   dynominion_navigation
 
-### Overview
+## Overview
 
 This package provides the main navigation stack for the Dynominion robot. It integrates ROS 2 Navigation (Nav2) components, enabling autonomous movement, path planning.
 
@@ -10,8 +10,8 @@ The navigation parameters and configuration files are stored in the **config/** 
 
 All parameters used in the configuration are based on the default Nav2 examples, except for the customized footprint and collision settings, which are tailored for the Dynominion robot’s geometry.
 
-### Package Structure
-
+## Package Structure
+```
 dynominion_navigation       
 ├── CMakeLists.txt      
 ├── config      
@@ -23,38 +23,46 @@ dynominion_navigation
 ├── README.md       
 └── rviz        
     └── nav2_view.rviz  
-
-### Package Requirements
+```
+## Package Requirements
 
     - nav2_bringup
     - Navigation2 packages
     - tf2_ros
     - geometry_msgs, sensor_msgs
 
-### Launch
+## Launch
+
+After launching gazebo, run the following command to start the navigation system:
     
 ```bash
 ros2 launch dynominion_navigation dynominion_nav_bringup.launch.py
 ```
+![Nav Launch Command](doc/nav_cmd(with%20map).png)
+---
 
-![Nav Launch Command](../frames/nav(1)/nav/nav_cmd.png)
+## 2D Pose Estimate
+
+1. Open RViz after launching navigation.
+2. Click **2D Pose Estimate**.
+3. Set robot's initial position on the map.
+
+![2D Pose Estimate](doc/2D_pose_est.png)
 
 ---
 
-### 2D Pose Estimate
+## Goal Navigation
 
-![2D Pose Estimate](../frames/nav(1)/nav/2D_pose_est.png)
+1. Click **Nav2 Goal** in RViz.
+2. Select destination location.
+3. Robot will autonomously navigate to the goal.
 
----
-
-### Goal Navigation
-
-![Goal Navigation](../frames/nav(1)/nav/goal.png)
+![Goal Navigation](doc/goal.png)
 
 ---
 
-### Navigation Demo
+## Navigation Demo
 
 
-<img src="../frames/nav(1)/nav/navpose_estngoal-ezgif.com-video-to-gif-converter.gif" width="1500">
+<img src="doc/nav2.gif" width="1500">
 

@@ -2,13 +2,16 @@
 
 ## Overview
 
-The **dynominion_gazebo** package integrates Gazebo sensor plugins along with the `gazebo_ros2_control` plugin to create a complete simulation environment for the Dynominion robot.
+The dynominion_gazebo package integrates Gazebo sensor plugins along with the gazebo_ros2_control plugin to create a complete simulation environment for the Dynominion robot.
 
-This package is responsible for:
--  Generating the Gazebo simulation world
--  Spawning the Dynominion URDF model
--  Establishing seamless communication between Gazebo and ROS 2
--  Providing differential drive control via ros2_control
+It is responsible for generating the Gazebo world, spawning the Dynominion URDF model, and establishing seamless communication between Gazebo and ROS 2.
+
+This package enables real-time interaction, control, and visualization of the robot within a simulated environment, combining physical simulation, ROS 2 interfaces, and customizable worlds and models for testing and development.
+
+All 3D models used in the simulation are stored in the models/ folder, while the Gazebo world definitions are located in the worlds/ folder.
+
+This package includes two launch files: - dyniminion_gazebo.launch.py: Spawns the Dynominion robot in the Gazebo world and establishes communication between Gazebo and ROS 2. - rviz_model_view.launch.py: Visualizes the Dynominion robot in RViz2 using a fixed reference frame.
+
 
 ---
 
