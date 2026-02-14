@@ -1,42 +1,42 @@
-# 🎮 dynominion_gazebo
+# dynominion_gazebo
 
-## 📋 Overview
+## Overview
 
 The **dynominion_gazebo** package integrates Gazebo sensor plugins along with the `gazebo_ros2_control` plugin to create a complete simulation environment for the Dynominion robot.
 
 This package is responsible for:
-- 🌍 Generating the Gazebo simulation world
-- 🤖 Spawning the Dynominion URDF model
-- 🔗 Establishing seamless communication between Gazebo and ROS 2
-- 🎛️ Providing differential drive control via ros2_control
+-  Generating the Gazebo simulation world
+-  Spawning the Dynominion URDF model
+-  Establishing seamless communication between Gazebo and ROS 2
+-  Providing differential drive control via ros2_control
 
 ---
 
-## 🚀 Launch Gazebo Simulation
+## Launch Gazebo Simulation
 
 ```bash
 ros2 launch dynominion_gazebo dynominion_gazebo.launch.py
 ```
 
-![Gazebo Launch Command](../frames/gazebo/gazebo_launch_cmd.png)
+![Gazebo Launch Command](doc/gazebo_launch_cmd.png)
 
-![Gazebo Cafe World](../frames/gazebo/gazebo.png)
+![Gazebo Cafe World](doc/gazebo.png)
 
 ---
 
-## 🎨 Launch RViz Visualization
+## Launch RViz Visualization
 
 ```bash
 ros2 launch dynominion_gazebo rviz_model_view.launch.py
 ```
 
-![RViz Command](../frames/gazebo/rviz_cmd.png)
+![RViz Command](doc/rviz_cmd.png)
 
-![RViz Robot View](../frames/gazebo/rviz.png)
+![RViz Robot View](doc/rviz.png)
 
 ---
 
-## 📁 Package Structure
+## Package Structure
 
 ```
 dynominion_gazebo
@@ -66,7 +66,7 @@ dynominion_gazebo
 └── worlds/
     └── cafe.world
 ```
-### Package Requirements
+## Package Requirements
 
     - gazebo_ros
     - gazebo_ros2_control
