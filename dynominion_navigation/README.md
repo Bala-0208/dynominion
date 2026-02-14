@@ -24,12 +24,16 @@ dynominion_navigation
 └── rviz        
     └── nav2_view.rviz  
 ```
-## Package Requirements
+## Requirements
 
-    - nav2_bringup
-    - Navigation2 packages
-    - tf2_ros
-    - geometry_msgs, sensor_msgs
+| Package | Purpose |
+|---------|---------|
+| `nav2_bringup` | Launch and configuration package for Navigation2 stack |
+| `Navigation2` | Provides autonomous navigation framework for ROS 2 |
+| `tf2_ros` | Handles coordinate frame transformations |
+| `geometry_msgs` | Provides standard geometric message types |
+| `sensor_msgs` | Provides sensor data message types |
+
 
 ## Launch
 

@@ -69,12 +69,15 @@ dynominion_gazebo
 └── worlds/
     └── cafe.world
 ```
-## Package Requirements
+## Requirements
 
-    - gazebo_ros
-    - gazebo_ros2_control
-    - ros2_control
-    - controller_manager
-    - xacro
-    - urdf
-    - robot_state_publisher
+| Package | Purpose |
+|---------|---------|
+| `gazebo_ros` | Provides ROS 2 integration with Gazebo simulator |
+| `gazebo_ros2_control` | Enables ros2_control interface inside Gazebo |
+| `ros2_control` | Framework for controlling robot hardware and actuators |
+| `controller_manager` | Loads and manages robot controllers |
+| `xacro` | Generates URDF files using macros |
+| `urdf` | Defines robot physical and visual description |
+| `robot_state_publisher` | Publishes TF transforms based on robot URDF |
+
