@@ -51,7 +51,7 @@ ros2 launch dynominion_navigation dynominion_nav_bringup.launch.py
 2. Click **2D Pose Estimate**.
 3. Set robot's initial position on the map.
 
-![2D Pose Estimate](doc/2D_pose_est.png)
+![2D Pose Estimate](doc/2Dpose_est.png)
 
 ---
 
@@ -68,5 +68,5 @@ ros2 launch dynominion_navigation dynominion_nav_bringup.launch.py
 ## Navigation Demo
 
 
-<img src="doc/nav2.gif" width="1500">
+<img src="doc/nav(pose_est).gif" width="1500">
 

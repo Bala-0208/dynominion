@@ -82,7 +82,11 @@ ros2 service call /slam_toolbox/save_map slam_toolbox/srv/SaveMap "{name: {data:
 
 ![Save Map Command](doc/map_saving_cmd.png)
 
-![Final Map](doc/map.png)
+## Saved Map Location
+
+![Save Map Command](doc/saved_map.png)
+
+
 
 ---
 
