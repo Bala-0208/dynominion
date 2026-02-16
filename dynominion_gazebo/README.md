@@ -15,30 +15,6 @@ This package includes two launch files: - dyniminion_gazebo.launch.py: Spawns th
 
 ---
 
-## Launch Gazebo Simulation
-
-```bash
-ros2 launch dynominion_gazebo dynominion_gazebo.launch.py
-```
-
-![Gazebo Launch Command](doc/gazebo_launch_cmd.png)
-
-![Gazebo Cafe World](doc/gazebo.png)
-
----
-
-## Launch RViz Visualization
-
-```bash
-ros2 launch dynominion_gazebo rviz_model_view.launch.py
-```
-
-![RViz Command](doc/rviz_cmd.png)
-
-![RViz Robot View](doc/rviz.png)
-
----
-
 ## Package Structure
 
 ```
@@ -80,4 +56,29 @@ dynominion_gazebo
 | `xacro` | Generates URDF files using macros |
 | `urdf` | Defines robot physical and visual description |
 | `robot_state_publisher` | Publishes TF transforms based on robot URDF |
+
+
+## Launch Gazebo Simulation
+
+```bash
+ros2 launch dynominion_gazebo dynominion_gazebo.launch.py
+```
+
+![Gazebo Launch Command](doc/gazebo_launch_cmd.png)
+
+![Gazebo Cafe World](doc/gazebo.png)
+
+---
+
+## Launch RViz Visualization
+
+```bash
+ros2 launch dynominion_gazebo rviz_model_view.launch.py
+```
+
+![RViz Command](doc/rviz_cmd.png)
+
+![RViz Robot View](doc/rviz.png)
+
+---
 

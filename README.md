@@ -15,7 +15,7 @@ A ROS 2–based open-source Autonomous Mobile Robot platform featuring 80 kg pay
     ```bash
     mkdir -p ~/ros2_ws/src
     cd ~/ros2_ws/src
-    git clone https://github.com/your-username/dynominion.git
+    git clone https://github.com/TeamRobotoAI/dynominion.git
     ```
 
 2.  **Install dependencies**:

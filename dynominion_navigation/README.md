@@ -68,5 +68,5 @@ ros2 launch dynominion_navigation dynominion_nav_bringup.launch.py
 ## Navigation Demo
 
 
-<img src="doc/nav(pose_est).gif" width="1500">
+<img src="doc/navpose_est.gif" width="1500">
 

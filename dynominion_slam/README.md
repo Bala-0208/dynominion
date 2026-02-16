@@ -77,8 +77,10 @@ ros2 launch dynominion_slam online_async_launch.py
 ## Save Map
 
 ```bash
-ros2 service call /slam_toolbox/save_map slam_toolbox/srv/SaveMap "{name: {data: map_cafe}}"
+ros2 service call /slam_toolbox/save_map slam_toolbox/srv/SaveMap "{name: {data: map_name}}"
 ```
+map_name is user choice. If the map successfully saved , the result of the response would be 0. The map is saved in the map directory.
+
 
 ![Save Map Command](doc/map_saving_cmd.png)
 
